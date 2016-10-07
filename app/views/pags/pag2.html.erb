@@ -1,2 +1,28 @@
 <h1>Pags#pag2</h1>
 <p>Find me in app/views/pags/pag2.html.erb</p>
+
+<%= image_tag 'homero1.png', class:"img", id:"img-1"%>
+<%= image_tag 'homer2.jpg', class:"img", id:"img-1"%>
+
+<ul>
+	<% @users.each do |e| %>
+	<li><%= e %></li>
+	<% end %>
+</ul>
+
+<p> Aca va</p>
+
+<button type="button" id="outside">primera</button>
+<button type="button" id="cheers">segunda</button>
+
+<script>
+	 $("#outside").click(function(e) {
+    e.preventDefault();
+    $.backstretch('http://dl.dropbox.com/u/515046/www/outside.jpg');
+  });
+
+  $("#cheers").click(function(e) {
+    e.preventDefault();
+    $.backstretch('http://dl.dropbox.com/u/515046/www/cheers.jpg');
+  });
+</script>

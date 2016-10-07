@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pags/pag3'
+
   get 'pags/pag1'
 
   get 'pags/pag2'

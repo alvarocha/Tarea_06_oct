@@ -1,0 +1,22 @@
+<h1>Pags#pag3</h1>
+<p>Find me in app/views/pags/pag3.html.erb</p>
+
+<ul>
+	<% @users.each do |e| %>
+	<li><%= e %></li>
+	<% end %>
+</ul>
+
+
+<script>
+var count = 0;
+ $("body").click(function(e) {
+ 	count+=1;
+ 	alert(count)
+    e.preventDefault();
+    if (count >=2) {
+    $.backstretch('http://dl.dropbox.com/u/515046/www/outside.jpg');
+    count  =0;
+    }
+  });
+</script>
